@@ -47,8 +47,9 @@ app.get('/get/:id', (req, res) => {
 // add a new book
 app.post('/add', (req, res) => {
   const newBook = {
-    id: books.length +1,
-    title: `Book ${books.length +1}`,
+    
+    id: Math.floor(Math.random() * 1000).toString(),
+    title: `Book ${Math.floor(Math.random() * 1000)}`,
   }
 
   books.push(newBook);
@@ -66,6 +67,23 @@ app.put('/update/:id', (req, res) => {
   } else {
     res.status(404).json({
       message: 'Book not found',
+    });
+  }
+})
+
+
+// delete a book
+app.delete('/delete/:id', (req, res) => {
+  const findIndexOfCurrentBook = books.findIndex(item => item.id === req.params.id);
+  if(findIndexOfCurrentBook !== -1){
+    const deletedBook = books.splice(findIndexOfCurrentBook, 1);
+    res.status(250).json({
+      message : "Book deleted successfully",
+      data : deletedBook[0]
+    })
+  } else {
+    res.status(404).json({
+      message: "Book not found"
     });
   }
 })
