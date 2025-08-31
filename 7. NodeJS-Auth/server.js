@@ -5,7 +5,7 @@ const authRoutes = require('./routes/auth-routes');
 const homeRoutes = require('./routes/home-routes');
 const adminRoutes = require('./routes/admin-routes');
 const uploadImageRoutes = require('./routes/image-routes');
-
+ 
 connectToDB();
 
 const app = express();

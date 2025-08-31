@@ -24,6 +24,13 @@ Easily perform CRUD operations on books and test endpoints using Postman.
 
 ---
 
+## 🌐 Live Demo
+
+The API is deployed and accessible at:  
+[https://book-store-api-1-f8yi.onrender.com](https://book-store-api-1-f8yi.onrender.com)
+
+---
+
 ## 📦 Installation
 
 1. **Clone the repository**
@@ -42,6 +49,7 @@ Easily perform CRUD operations on books and test endpoints using Postman.
    Create a `.env` file in the root directory:
    ```
    PORT=3000
+ 
    MONGODB_URI=mongodb://localhost:27017/bookstore
    ```
 
