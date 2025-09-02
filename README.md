@@ -21,11 +21,6 @@ Part 1/
 │   ├── 8.promises/
 │   ├── 9.async-await/
 │   ├── 10.event-emitter/
-│   ├── 10. NodeJS-GraphQL/
-│   │   ├── 1. Basic/
-│   │   └── 2. Mongoose-Integration/
-│   ├── 11. NodeJS-with-TypeScript/
-│   └── ...
 ├── 2. Express-tutorial/
 ├── 3. EJS tutorial/
 ├── 4. Rest-API-development/
@@ -34,6 +29,10 @@ Part 1/
 ├── 7. NodeJS-Auth/
 ├── 8. MongoDB-Intermediate/
 ├── 9. Nodejs-socket/
+│── 10. NodeJS-GraphQL/
+│   │   ├── 1. Basic/
+│   │   └── 2. Mongoose-Integration/
+├── 11. NodeJS-with-TypeScript/
 Part 2/
 ```
 
